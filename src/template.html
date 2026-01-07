@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weatherly</title>
   </head>
-  <body></body>
+  <body>
+    <form id="search-form">
+      <input id="location-input" placeholder="Enter city..." />
+      <button type="submit">Search</button>
+      <button type="button" id="unit-toggle">°F / °C</button>
+    </form>
+
+    <div id="loading" hidden>Loading...</div>
+    <div id="weather"></div>
+  </body>
 </html>
