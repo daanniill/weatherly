@@ -1,7 +1,7 @@
-require('dotenv').config(); // Load env variables from .env
 const apiKey = process.env.API_KEY
 
-export async function featherWeather(location, unit="us") {
+
+export async function featchWeather(location, unit="us") {
     const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=${unit}&key=${apiKey}`;
 
     const response = await fetch(url);
