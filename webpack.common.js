@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/REPO_NAME/",
+    publicPath: "/weatherly/",
     clean: true,
   },
   plugins: [
