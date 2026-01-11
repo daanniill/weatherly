@@ -1,0 +1,68 @@
+:root {
+  --primary: #e0e1dd;        /* alabaster grey */
+  --alt_primary: #0d1b2a;    /* ink black */
+  --secondary: #778da9;      /* lavender grey */
+}
+
+.dark_theme {
+  --primary: #0d1b2a;
+  --alt_primary: #e0e1dd;
+}
+
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CENTER PAGE */
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--alt_primary);
+  font-family: system-ui, sans-serif;
+}
+
+/* MAIN WEATHER CARD */
+.weather-container {
+  background: var(--secondary);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  min-width: 320px;
+  max-width: 90vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* WEATHER TEXT */
+#weather {
+  color: var(--primary);
+  text-align: center;
+}
+
+/* LOCATION TITLE */
+#weather h2 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+}
+
+/* TEMPERATURE */
+#weather .temp {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: bold;
+}
+
+/* CONDITIONS */
+#weather .conditions {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}

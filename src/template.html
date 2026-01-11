@@ -6,13 +6,17 @@
     <title>Weatherly</title>
   </head>
   <body>
+    <div class="weather-container">
+      <div id="loading" hidden>Loading...</div>
+      <div id="weather"></div>
+    </div>
+    
     <form id="search-form">
       <input id="location-input" placeholder="Enter city..." />
       <button type="submit">Search</button>
       <button type="button" id="unit-toggle">°F / °C</button>
     </form>
 
-    <div id="loading" hidden>Loading...</div>
-    <div id="weather"></div>
+    
   </body>
 </html>
